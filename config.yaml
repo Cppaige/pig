@@ -1,0 +1,13 @@
+﻿# 实例分割训练配置
+# 数据集根目录（包含 train/valid/test，且每个目录内有 _annotations.coco.json）
+data_root: /Users/cppaige/Grade3_1/dataanalyze/pig _division1/data
+# 训练参数
+model: yolo11n-seg.pt
+epochs: 5
+imgsz: 416
+batch: 8
+patience: 2
+
+device: null        # 0 表示 GPU，cpu 表示 CPU，留空自动选择
+project: runs/segment
+name: pig-person-seg
